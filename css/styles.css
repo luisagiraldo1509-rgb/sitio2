@@ -84,7 +84,7 @@ body {
 }
 
 /* ==========================================================================
-   2. SECCIÓN HERO (Nueva sección agregada)
+   2. SECCIÓN HERO (Adaptada para Carpas de Carro)
    ========================================================================== */
 .hero-section {
     max-width: 1200px;
@@ -94,12 +94,12 @@ body {
 
 .hero-container {
     background-color: #f3f4f6; /* Fondo gris de respaldo */
-    /* El ../ ayuda a buscar la imagen saliendo desde la carpeta css/ */
-    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('../tu-imagen-de-autobus.jpg');
+    /* La ruta '../' permite salir de la carpeta css/ para buscar la imagen */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url('../imagen-carpa-carro.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 24px; /* Bordes redondeados del banner */
+    border-radius: 24px; /* Esquinas redondeadas según la referencia */
     min-height: 480px;
     display: flex;
     align-items: center;
@@ -107,7 +107,7 @@ body {
 }
 
 .hero-content {
-    max-width: 550px; /* Limita el texto a la mitad izquierda */
+    max-width: 550px; /* Asegura el formato a la mitad izquierda de la imagen */
 }
 
 .hero-tagline {
@@ -115,15 +115,15 @@ body {
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 1px;
-    color: #333333;
+    color: #4b5563;
     margin-bottom: 16px;
     text-transform: uppercase;
 }
 
 .hero-title {
-    font-size: 48px;
+    font-size: 44px;
     font-weight: 800;
-    line-height: 1.15;
+    line-height: 1.2;
     color: #000000;
     margin-bottom: 32px;
     letter-spacing: -0.5px;
@@ -173,5 +173,5 @@ body {
 .video-icon {
     color: #2582ff;
     font-size: 12px;
-    margin-left: 2px; /* Centrado óptico del símbolo play */
+    margin-left: 2px;
 }
