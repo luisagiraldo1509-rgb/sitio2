@@ -11,7 +11,9 @@ body {
     color: #000000;
 }
 
-/* Contenedor principal del Menú de Navegación */
+/* ==========================================================================
+   1. BARRA DE NAVEGACIÓN (Preservada del paso anterior)
+   ========================================================================== */
 .header {
     display: table;
     width: 100%;
@@ -21,7 +23,6 @@ body {
     background-color: #ffffff;
 }
 
-/* Logo */
 .logo {
     display: table-cell;
     vertical-align: middle;
@@ -32,7 +33,6 @@ body {
     width: 25%;
 }
 
-/* Menú de enlaces (Centro) */
 .nav-menu {
     display: table-cell;
     vertical-align: middle;
@@ -55,7 +55,6 @@ body {
     color: #1e70e4;
 }
 
-/* Botón de Llamado a la Acción (Derecha) */
 .action-btn {
     display: table-cell;
     vertical-align: middle;
@@ -82,4 +81,97 @@ body {
 
 .btn-primary:active {
     transform: scale(0.98);
+}
+
+/* ==========================================================================
+   2. SECCIÓN HERO (Nueva sección agregada)
+   ========================================================================== */
+.hero-section {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 0 12px;
+}
+
+.hero-container {
+    background-color: #f3f4f6; /* Fondo gris de respaldo */
+    /* El ../ ayuda a buscar la imagen saliendo desde la carpeta css/ */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url('../tu-imagen-de-autobus.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 24px; /* Bordes redondeados del banner */
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    padding: 60px 48px;
+}
+
+.hero-content {
+    max-width: 550px; /* Limita el texto a la mitad izquierda */
+}
+
+.hero-tagline {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #333333;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.15;
+    color: #000000;
+    margin-bottom: 32px;
+    letter-spacing: -0.5px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-hero-primary {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #2582ff;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(37, 130, 255, 0.2);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-hero-primary:hover {
+    background-color: #1e70e4;
+}
+
+.btn-hero-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-hero-video:hover {
+    background-color: #f9fafb;
+    transform: scale(1.05);
+}
+
+.video-icon {
+    color: #2582ff;
+    font-size: 12px;
+    margin-left: 2px; /* Centrado óptico del símbolo play */
 }
