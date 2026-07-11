@@ -94,14 +94,14 @@ body {
 
 .hero-container {
     background-color: #f3f4f6;
-    /* Usamos '../' para salir de la carpeta css e ir directo a la carpeta de imágenes */
-    background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url('../imágenes/Publicidadcarro.jpeg');
+    /* Usamos 'background-image', 'linear-gradient' y 'url' en minúsculas */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url('../imagenes/Publicidadcarro.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 24px;
     min-height: 480px;
-    display: flex;
+    display: flex; /* 'display: flex' en lugar de 'mostrar: doblar' */
     align-items: center;
     padding: 60px 48px;
 }
